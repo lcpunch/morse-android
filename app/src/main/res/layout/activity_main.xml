@@ -11,19 +11,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/message_nocrypt"
+        <EditText
+            android:id="@+id/alpha"
+            android:labelFor="@+id/alpha"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Mensagem nao criptografada"
-            android:textAlignment="center" />
+            android:text="@string/message"
+            android:textAlignment="center" android:inputType="" />
 
-        <TextView
-            android:id="@+id/message_crypt"
+        <EditText
+            android:id="@+id/morse"
+            android:labelFor="@+id/morse"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Mensagem criptografada"
-            android:textAlignment="center" />
+            android:text="@string/message_encode"
+            android:textAlignment="center" android:inputType="" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +38,8 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="." />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/point" />
 
             <Button
                 android:id="@+id/button2"
@@ -44,7 +47,8 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="-" />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/moins" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,7 +62,8 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="Space" />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/space" />
 
             <Button
                 android:id="@+id/button4"
@@ -66,7 +71,8 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="/" />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/barre" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,7 +86,8 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="Efacer" />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/effacer" />
 
             <Button
                 android:id="@+id/button8"
@@ -88,13 +95,14 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:text="Play" />
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/play" />
 
         </LinearLayout>
 
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:fillViewport="true">
 
@@ -105,7 +113,7 @@
 
                 <TableLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1">
 
                     <TableRow
