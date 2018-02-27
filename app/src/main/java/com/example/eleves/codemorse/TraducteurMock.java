@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by eleves on 2018-02-22.
+ * Created by eleves on 2018-02-26.
  */
 
-public class Traducteur implements TraducteurMorse {
+public class TraducteurMock implements TraducteurMorse {
 
     Map<String, String> dictionnaire = new HashMap<String, String>();
 
-    public Traducteur() {
+    public TraducteurMock() {
 
         dictionnaire.put("A", ".-");
         dictionnaire.put("B", "-...");
@@ -65,13 +65,13 @@ public class Traducteur implements TraducteurMorse {
     @Override
     public String toAlpha(String morse) {
 
-
-        return null;
+        return "The quick brown fox jumps over the lazy dog";
     }
 
     @Override
     public String toMorse(String alpha) {
-        return null;
+
+        return "- .... . / --.- ..- .. -.-. -.- / -... .-. --- .-- -. / ..-. --- -..- / .--- ..- -- .--. ... / --- ...- . .-. / - .... . / .-.. .- --.. -.-- / -.. --- --.";
     }
 
     @Override
@@ -83,4 +83,5 @@ public class Traducteur implements TraducteurMorse {
     public String getNomProgrammeurs() {
         return null;
     }
+
 }
